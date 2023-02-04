@@ -6,11 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "puppeteer": "^19.6.3"
+    "puppeteer": "^19.6.3",
+    "whatsapp-web.js": "^1.19.3"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0"
   }
 }
