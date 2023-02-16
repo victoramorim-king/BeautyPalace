@@ -49,7 +49,6 @@ Lembrete de agendamento no Beauty Palace
 
 ${element.service}
 
-
 Posso confirmar o seu horário?
 
 ⚠ Caso não consiga comparecer no atendimento, peço que desmarque com no mínimo 3 horas de antecedência para podermos encaixar outra rainha no horário.
@@ -62,9 +61,7 @@ Posso confirmar o seu horário?
     });
 
     chatId = "55" + '11982153054' + "@c.us";
-    client.sendMessage(chatId, JSON.stringify(remindersWithErrors)).then(
-      client.destroy()
-    )
+    client.sendMessage(chatId, JSON.stringify(remindersWithErrors))
   })
   client.initialize()
 }
