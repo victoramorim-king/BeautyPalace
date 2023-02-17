@@ -62,6 +62,10 @@ Posso confirmar o seu horário?
 
     chatId = "55" + '11981451586' + "@c.us";
     client.sendMessage(chatId, "Esses agendamentos não puderam ser enviados por conter algum erro em seus dados: \n" + JSON.stringify(remindersWithErrors)).finally()
+
+    chatId = "55" + '11981451586' + "@c.us";
+    client.sendMessage(chatId, "Esses agendamentos não puderam ser enviados por conter algum erro em seus dados: \n" + JSON.stringify(remindersWithErrors)).finally()
+
     console.log("aguardando 2 minutos para garantir que todas as mensagens foram enviadas!")
     setTimeout(function() {
       client.destroy()
