@@ -55,13 +55,17 @@ Posso confirmar o seu horário?
 
 ⚠ Caso haja falta sem um aviso prévio, será cobrado uma taxa com o valor de 50% referente ao/s serviço/s que seria prestado.`
 
-      let chatId = "55" + element.tel + "@c.us";
+      let chatId = "55" + "11981451586" + "@c.us";
       client.sendMessage(chatId, text);
       console.log('lembretes enviados para:' + chatId + '|' + element.clientName)
     });
 
-    chatId = "55" + '11982153054' + "@c.us";
-    client.sendMessage(chatId, JSON.stringify(remindersWithErrors))
+    chatId = "55" + '11981451586' + "@c.us";
+    client.sendMessage(chatId, "Esses agendamentos não puderam ser enviados por conter algum erro em seus dados: \n" + JSON.stringify(remindersWithErrors)).finally()
+    console.log("aguardando 2 minutos para garantir que todas as mensagens foram enviadas!")
+    setTimeout(function() {
+      client.destroy()
+    }, 120000);
   })
   client.initialize()
 }
