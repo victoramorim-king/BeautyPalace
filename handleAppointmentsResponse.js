@@ -9,7 +9,7 @@ function addReminder(reminder, appointmentData){
 
 function updateReminder(reminder, appointmentData){
   reminder[appointmentData.clientName].service.push(appointmentData.service)
-  if(reminder[appointmentData.clientName].appointmentTime > appointmentData.appointmentTime){
+  if(Number.parseInt(reminder[appointmentData.clientName].appointmentTime) > Number.parseInt(appointmentData.appointmentTime)){
     reminder[appointmentData.clientName].appointmentTime = appointmentData.appointmentTime
   }
 

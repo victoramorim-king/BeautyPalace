@@ -36,7 +36,7 @@ module.exports = function sendRemindersViaWhatsapp(reminders){
     Object.values(reminders).forEach(element => {
       if(element.tel.length != 11){
         remindersWithErrors.push(element)
-        console.log(`error detected: ${element}`)
+        console.log(`error detected: ${JSON.stringify(element)}`)
       }
 
       element.clientName[0] = element.clientName.charAt(0).toUpperCase() 
