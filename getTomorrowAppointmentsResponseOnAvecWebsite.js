@@ -17,7 +17,7 @@ const tomorrowAgendaButtonXpath = getTomorrowAgendaButtonXpath();
 const loadAllProfessionalsButtonXpath = 'xpath//html/body/div[10]/div[2]/div[4]/div[2]/div[1]/div[2]/div[1]/ul/li[5]';
 
 module.exports = async function getTomorrowAppointmentsResponseOnAvecWebsite(){
-  const browser = await puppeteer.launch({headless: true, args: ['--no-sandbox']});
+  const browser = await puppeteer.launch({args: ['--no-sandbox']});
   const page = await browser.newPage();
 
   await page.goto(avecSistemLoginUrl);
