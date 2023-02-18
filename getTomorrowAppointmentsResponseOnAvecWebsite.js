@@ -5,6 +5,7 @@ function getTomorrowAgendaButtonXpath(){
   let tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   tomorrow = String(tomorrow.getDate());
+  tomorrow = "14"
   return `xpath///html/body/div[10]/div[2]/div[3]/div[2]/div[1]/div/div[1]/table/tbody/*/td[contains(text(), "${tomorrow}") and not(contains(@class, "old"))]`;
 }
 
