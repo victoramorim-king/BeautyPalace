@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "puppeteer": "19.7.1",
+    "puppeteer": "^18.0.5",
     "whatsapp-web.js": "^1.19.4"
   },
   "dependencies": {
